@@ -1,1 +1,1 @@
-# Parallel-Satellite-Image-Change-Detection-
+# Parallel-Satellite-Image-Change-Detection
