@@ -1,0 +1,4 @@
+Method,Time_sec
+Sequential,9.206
+OpenMP,1.379
+GPU,9.118
