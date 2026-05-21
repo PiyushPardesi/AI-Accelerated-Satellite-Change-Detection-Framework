@@ -1,6 +1,6 @@
-# Performance Analysis of Parallel Satellite Image Change Detection using CPU, OpenMP, and GPU
+# # AI-Accelerated Satellite Change Detection Framework
 
-**Authors:** Kartik K, Prince Kumar, Piyush Pardesi  
+**Authors:** Piyush Pardesi  
 **Institution:** SRM Institute of Science and Technology, Kattankulathur  
 **Date:** April 2026
 
@@ -10,6 +10,8 @@
 ![OpenCL](https://img.shields.io/badge/OpenCL-1.2-purple.svg)
 
 ## Abstract
+
+This project is evolving into an advanced AI-assisted satellite image analysis framework combining parallel computing, computer vision, and intelligent change detection techniques for scalable remote sensing applications.
 
 This project presents a comprehensive architectural study of parallel computing efficiency in satellite image change detection (CD). While GPUs theoretically offer superior computational power, the "parallelization tax" - encompassing thread management overhead and data transfer latency - often negates performance gains at moderate image resolutions ($1024 \times 1024$). Our research quantifies this phenomenon by implementing identical change detection pipelines across three execution paradigms: sequential CPU baseline, OpenMP multi-threading, and GPU acceleration via OpenCV's UMat framework. Using a benchmark dataset of 637 image pairs from the LEVIR-CD dataset (~4GB), we demonstrate that coarse-grained parallelism through OpenMP achieves near-linear speedup (6.68×), while GPU acceleration provides marginal benefits (1.01×) due to PCIe bus transfer bottlenecks.
 
@@ -240,12 +242,15 @@ project/
 └── README.md
 ```
 
-## Future Work
+## Future AI/ML Roadmap
 
-1. **Hybrid Architecture:** Combine OpenMP and GPU for optimal resource utilization
-2. **Memory Pooling:** Implement persistent GPU memory to eliminate transfer overhead
-3. **Adaptive Thresholding:** Dynamic selection of parallelization strategy based on image characteristics
-4. **Extended Benchmarks:** Testing with additional datasets and hardware configurations
+- Deep Learning based semantic segmentation
+- PyTorch inference pipeline
+- Hybrid CPU-GPU execution orchestration
+- Adaptive execution engine
+- Intelligent threshold optimization
+- Real-time geospatial visualization dashboard
+- ONNX model optimization and deployment
 
 ---
 
